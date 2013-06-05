@@ -1,0 +1,54 @@
+; ACL2 Interpreter for Java
+; Copyright (C) 2013 Battelle Memorial Institute
+;
+; Contact:
+;  David Rager, ragerdl@cs.utexas.edu
+;
+; This program is free software; you can redistribute it and/or modify it under
+; the terms of the GNU General Public License as published by the Free Software
+; Foundation; either version 2 of the License, or (at your option) any later
+; version.  This program is distributed in the hope that it will be useful but
+; WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+; FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+; more details.  You should have received a copy of the GNU General Public
+; License along with this program; if not, write to the Free Software
+; Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA 02110-1335, USA.
+;
+; Original author: David Rager <ragerdl@cs.utexas.edu>
+
+Maybe we should require that every method of the model return not only
+the value specified in the Java but also a new version of the object
+upon which that method is called.
+
+But of course that doesn't work, because it immediately breaks once
+there is aliasing.
+
+
+So, instead, we need to return a modified heap, where there are
+pointers and we have the ability to overwrite (probably via shadowing)
+values at those pointers.  Pointers should be simple natural numbers.
+
+Should we allow pointers to point to other pointers?  Or should we
+resolve all aliases to aggregates?
+
+  <tt>boolean foo = true;</tt>
+
+Well, this is simple to model in the stack, in that we could just have
+a local variable in the local scope called "foo" and assign it the
+value of t.  But what if the user writes
+
+  <tt>Boolean foo = true;</tt>
+
+Now we need to construct a version of a heap.  So, perhaps our heap
+gets constructed as such:
+
+  0    <Boolean, literal-t>
+
+Now, suppose we pass foo to another method that modifies foo.  Our
+source code could look like the following
+
+  boolean oldVal = f(foo);
+
+In the model, the ACL2 code that evaluates f would have to store the
+value that f returns into oldVal, and it would have to keep track of
+the new version of the heap.
