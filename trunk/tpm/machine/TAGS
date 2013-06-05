@@ -1,0 +1,887 @@
+
+defenum-plus.lisp,258
+(defund defenum+-member-to-test1 10,211
+(defnd defenum+-member-to-test 21,540
+(defnd defenum+-members-to-tests 48,1733
+(defn defenum-strip-cars-lite 58,2119
+(defun defenum-deduce-type-set 68,2441
+(defun defenum+-fn 84,2895
+(defmacro defenum+ 158,5024
+
+defprimitive.lisp,56
+(defmacro defprimitive 6,103
+(defprimitive foo 22,601
+
+tpm-commands-gwk.lisp,203
+(cutil::define tpm-sha1-start12,280
+(cutil::define tpm-sha1-update78,4078
+(cutil::define tpm-sha1-complete139,6662
+(cutil::define tpm-extend179,8555
+(cutil::define tpm-sha1-complete-extend273,13324
+
+tpm-commands.lisp,448
+(cutil::define tpm-init13,277
+(cutil::define tpm-startup33,1002
+(cutil::define tpm-save-state62,2115
+(cutil::define tpmx-verify-auth87,3313
+(cutil::define tpm-disable-owner-clear96,3666
+(cutil::define tpm-disable-force-clear125,4870
+(cutil::define tpm-reset-establishment-bit148,5833
+(cutil::define tpmx-marshall-permament-flags 168,6739
+(cutil::define tpmx-marshall-stclear-flags 196,8308
+(cutil::define tpm-get-capability-owner213,9016
+
+tpm-command-stubs.lisp,4767
+(cutil::define tpm-init11,143
+(cutil::define tpm-startup19,361
+(cutil::define tpm-save-state29,740
+(cutil::define tpm-self-test-full38,1052
+(cutil::define tpm-continue-self-test47,1372
+(cutil::define tpm-get-test-result56,1693
+(cutil::define tpm-set-owner-install66,2108
+(cutil::define tpm-owner-set-disable76,2500
+(cutil::define tpm-physical-enable88,2994
+(cutil::define tpm-physical-disable97,3314
+(cutil::define tpm-physical-set-deactivated106,3642
+(cutil::define tpm-set-temp-deactivated116,4046
+(cutil::define tpm-set-operator-auth127,4490
+(cutil::define tpm-take-ownership137,4866
+(cutil::define tpm-owner-clear153,5820
+(cutil::define tpm-force-clear164,6250
+(cutil::define tpm-disable-owner-clear173,6568
+(cutil::define tpm-disable-force-clear184,7013
+(cutil::define tpm-physical-presence193,7338
+(cutil::define tpm-reset-establishment-bit203,7767
+(cutil::define tpm-get-capability212,8093
+(cutil::define tpm-set-capability224,8627
+(cutil::define tpm-get-capability-owner238,9249
+(cutil::define tpm-get-audit-digest252,9989
+(cutil::define tpm-get-audit-digest-signed266,10802
+(cutil::define tpm-set-ordinal-audit-status284,11848
+(cutil::define tpm-set-redirection297,12429
+(cutil::define tpm-reset-lock-value311,13083
+(cutil::define tpm-seal322,13513
+(cutil::define tpm-unseal338,14438
+(cutil::define tpm-un-bind354,15228
+(cutil::define tpm-create-wrap-key368,15911
+(cutil::define tpm-load-key2384,16873
+(cutil::define tpm-get-pub-key398,17594
+(cutil::define tpm-sealx411,18163
+(cutil::define tpm-create-migration-blob427,19062
+(cutil::define tpm-convert-migration-blob446,20157
+(cutil::define tpm-authorize-migration-key461,20926
+(cutil::define tpm-migrate-key475,21665
+(cutil::define tpm-cmk_-set-restrictions490,22384
+(cutil::define tpm-cmk_-approve-ma502,22922
+(cutil::define tpm-cmk_-create-key515,23613
+(cutil::define tpm-cmk_-create-ticket532,24744
+(cutil::define tpm-cmk_-create-blob547,25498
+(cutil::define tpm-cmk_-convert-migration568,27116
+(cutil::define tpm-create-maintenance-archive586,28353
+(cutil::define tpm-load-maintenance-archive600,29045
+(cutil::define tpm-kill-maintenance-feature612,29550
+(cutil::define tpm-load-manu-maint-pub623,30000
+(cutil::define tpm-read-manu-maint-pub635,30567
+(cutil::define tpm-sha1-start646,31035
+(cutil::define tpm-sha1-update656,31493
+(cutil::define tpm-sha1-complete666,31855
+(cutil::define tpm-sha1-complete-extend677,32317
+(cutil::define tpm-sign690,32938
+(cutil::define tpm-get-random704,33605
+(cutil::define tpm-stir-random715,34050
+(cutil::define tpm-certify-key725,34422
+(cutil::define tpm-certify-key2743,35493
+(cutil::define tpm-create-endorsement-key-pair762,36663
+(cutil::define tpm-create-revocable-ek775,37339
+(cutil::define tpm-revoke-trust791,38375
+(cutil::define tpm-read-pubek801,38758
+(cutil::define tpm-owner-read-internal-pub813,39312
+(cutil::define tpm-make-identity826,39923
+(cutil::define tpm-activate-identity844,41049
+(cutil::define tpm-extend860,41833
+(cutil::define tpm-pcr-read872,42381
+(cutil::define tpm-quote883,42841
+(cutil::define tpm-pcr_-reset899,43823
+(cutil::define tpm-quote2909,44190
+(cutil::define tpm-change-auth927,45283
+(cutil::define tpm-change-auth-owner946,46275
+(cutil::define tpm-oiap960,46907
+(cutil::define tpm-osap971,47438
+(cutil::define tpm-dsap986,48342
+(cutil::define tpm-set-owner-pointer1002,49539
+(cutil::define tpm-delegate_-manage1013,49994
+(cutil::define tpm-delegate_-create-key-delegation1028,50726
+(cutil::define tpm-delegate_-create-owner-delegation1043,51629
+(cutil::define tpm-delegate_-load-owner-delegation1058,52508
+(cutil::define tpm-delegate_-read-table1071,53151
+(cutil::define tpm-delegate_-update-verification1082,53707
+(cutil::define tpm-delegate_-verify-delegation1095,54367
+(cutil::define tpm-nv_-define-space1105,54778
+(cutil::define tpm-nv_-write-value1118,55407
+(cutil::define tpm-nv_-write-value-auth1132,56003
+(cutil::define tpm-nv_-read-value1146,56597
+(cutil::define tpm-nv_-read-value-auth1160,57217
+(cutil::define tpm-key-control-owner1174,57827
+(cutil::define tpm-save-context1189,58525
+(cutil::define tpm-load-context1202,59127
+(cutil::define tpm-flush-specific1215,59810
+(cutil::define tpm-get-ticks1226,60266
+(cutil::define tpm-tick-stamp-blob1236,60677
+(cutil::define tpm-establish-transport1252,61562
+(cutil::define tpm-execute-transport1270,62648
+(cutil::define tpm-release-transport-signed1285,63432
+(cutil::define tpm-create-counter1303,64465
+(cutil::define tpm-increment-counter1318,65207
+(cutil::define tpm-read-counter1331,65782
+(cutil::define tpm-release-counter1342,66230
+(cutil::define tpm-release-counter-owner1354,66729
+(cutil::define tpm-daa_-join1366,67223
+(cutil::define tpm-daa_-sign1384,68098
+
+tpm-input-guard.lisp,157
+(defenum+ tpm-input-p7,113
+(defun tpm-input->command 26,657
+(defun tpm-input->arg1 35,844
+(defun tpm-input->arg2 50,1280
+(defun tpm-input->arg3 69,1873
+
+tpm-input.lisp,229
+(defun tpm-input->command 6,87
+(defun tpm-input->arg1 15,274
+(defun tpm-input->arg2 33,859
+(defun tpm-input->arg3 52,1452
+(defun tpm-input->arg4 76,2189
+(defun tpm-input->arg5 105,3079
+(defun tpm-input->arg-count 137,4129
+
+tpm.lisp,205
+(define tpm-step12,197
+(defxdoc tpm40,1343
+(defxdoc tpm-commands48,1672
+(defxdoc tpm-structures56,1862
+(defxdoc tpm-finished60,1953
+(defxdoc tpm-unfinished65,2098
+(defxdoc tpm-oddly-finished70,2238
+
+tpm-modeling-choices.lisp,127
+(defconst *tpm-startup-initialize-audit-digest* 3,21
+(defconst *tpm-version-major* 5,73
+(defconst *tpm-version-minor* 6,106
+
+tpm-objects.lisp,561
+(cutil::defaggregate tpmx-auth-info13,356
+(cutil::defaggregate tpmx-sha1-thread28,765
+(cutil::define tpmx-sha1-thread->start39,1234
+(cutil::define tpmx-sha1-thread->stop94,3518
+(cutil::define tpmx-sha1-thread->integer-update111,4177
+(cutil::define tpmx-sha1-thread->hash-list141,5428
+(cutil::define tpmx-sha1-thread->update157,5985
+(cutil::define tpmx-sha1-thread->start-stop182,7082
+(cutil::define tpmx-sha1-thread->start-update-stop206,8035
+(cutil::define tpmx-sha1-thread->start-extend-stop228,8837
+(cutil::defaggregate tpmx-internal-data250,9732
+
+tpm-output.lisp,29
+(defenum+ tpm-output-p7,122
+
+tpm-structure-checks-gwk.lisp,143
+(cutil::define tpm-key->check11,263
+(cutil::define tpm-key->check-make-identity56,2097
+(cutil::define tpm-key->check-create-wrap-key95,4084
+
+tpm-structures-gwk.lisp,10674
+(defprimitive byte 13,408
+(defthm byte-is-integerp 20,528
+(defprimitive uint16 24,682
+(defthm uint16-is-integerp 31,818
+(defprimitive uint32 34,933
+(defthm uint32-is-integerp 41,1069
+(defprimitive uint64 44,1184
+(defthm uint64-is-integerp 51,1320
+(cutil::deflist byte-list-p 54,1435
+(defnd make-byte-list 60,1548
+(cutil::deflist uint32-list-p 63,1581
+(defnd make-uint32-list 69,1698
+(defprimitive 4-byte-list 72,1733
+(defprimitive 16-byte-list 78,1895
+(defprimitive 20-byte-list 84,2060
+(defprimitive 26-byte-list 90,2225
+(defprimitive 128-byte-list 96,2390
+(defprimitive 256-byte-list 102,2558
+(defprimitive tpm-actual-count 114,2937
+(defthm tpm-actual-count-is-integerp 119,3041
+(defprimitive tpm-authhandle 124,3246
+(defthm tpm-authhandle-is-integerp 129,3348
+(defprimitive tpm-capability-area 134,3551
+(defthm tpm-capability-area-is-integerp 139,3658
+(defprimitive tpm-count-id 144,3871
+(defthm tpm-count-id-is-integerp 149,3971
+(defprimitive tpm-delegate-index 154,4175
+(defthm tpm-delegate-index-is-integerp 159,4281
+(defprimitive tpm-dirindex 164,4479
+(defthm tpm-dirindex-is-integerp 169,4579
+(defprimitive tpm-family-id 174,4941
+(defthm tpm-authhandlefamily-id-is-integerp 179,5042
+(defprimitive tpm-family-verification 184,5324
+(defthm tpm-family-verification-is-integerp 189,5435
+(defprimitive tpm-modifier-indicator 194,5656
+(defthm tpm-modifier-indicator-is-integerp 199,5766
+(defprimitive tpm-pcrindex 204,5976
+(defthm tpm-pcrindex-is-integerp 209,6076
+(defprimitive tpm-redit-command 214,6258
+(defthm tpm-redit-command-is-integerp 219,6363
+(cutil::defenum tpm-structure-tag-p224,6565
+(defnd make-tpm-strcuture-tag 287,8245
+(defprimitive tpm-sym-mode 292,8365
+(defthm tpm-sym-mode-is-integerp 297,8465
+(defprimitive tpm-transhandle 302,8651
+(defthm tpm-transhandle-is-integerp 307,8754
+(defprimitive tpm-transport-attributes 312,9002
+(defthm tpm-transport-attributes-is-integerp 317,9114
+(defprimitive tpm-entity-type 322,9370
+(defthm tpm-entity-type-is-integerp 327,9473
+(defprimitive tpm-handle 332,9682
+(defthm tpm-handle-is-integerp 337,9780
+(defprimitive tpm-version-byte 342,9961
+(defthm tpm-version-byte-is-integerp 347,10061
+(defprimitive tpm-authdata 351,10228
+(cutil::defenum tpm-command-code-p358,10389
+(defnd make-tpm-command-code 486,13961
+(defprimitive tpm-capability-area-set 490,14056
+(defthm tpm-capability-area-set-is-integerp 495,14167
+(defprimitive tpm-redir-command 500,14379
+(defthm tpm-redir-command-is-integerp 505,14484
+(cutil::defaggregate tpm-startup-effects514,14835
+(cutil::defaggregate tpm-key-flags529,15944
+(cutil::defaggregate tpm-cmk-delegate540,17016
+(cutil::defaggregate tpm-locality-selection550,17995
+(cutil::defaggregate tpm-key-control561,18500
+(cutil::defaggregate tpm-family-flags568,18802
+(cutil::defenum tpm-resource-type-p580,19436
+(defnd make-tpm-resource-type 595,20337
+(cutil::defenum tpm-payload-type-p600,20494
+(defnd make-tpm-payload-type 613,21129
+(cutil::defenum tpm-key-handle-p618,21265
+(defnd make-tpm-key-handle 630,21872
+(cutil::defenum tpm-startup-type-p635,21985
+(defnd make-tpm-startup-type 643,22302
+(cutil::defenum tpm-protocol-id-p648,22410
+(defnd make-tpm-protocol-id 660,22841
+(cutil::defenum tpm-algorithm-id-p665,22961
+(defnd make-tpm-algorithm-id 680,23581
+(cutil::defenum tpm-physical-presence-p685,23725
+(defnd make-tpm-physical-presence 698,24480
+(cutil::defenum tpm-migrate-scheme-p703,24615
+(defnd make-tpm-migrate-scheme 713,25240
+(cutil::defenum tpm-ek-type-p718,25399
+(defnd make-tpm-ek-type 725,25618
+(cutil::defenum tpm-platform-specific-p730,25770
+(defnd make-tpm-platform-specific 740,26119
+(cutil::defenum tpm-enc-scheme-p745,26251
+(defnd make-tpm-enc-scheme 755,26595
+(cutil::defenum tpm-key-usage-p760,26720
+(defnd make-tpm-key-usage 772,27839
+(cutil::defenum tpm-sig-scheme-p777,27962
+(defnd make-tpm-sig-scheme 786,28256
+(cutil::defenum tpm-auth-data-usage-p791,28424
+(defnd make-tpm-auth-data-usage 799,28986
+(cutil::defenum tpm-tag-p804,29112
+(defnd make-tpm-tag 815,29708
+(cutil::defenum tpm-result-p820,29814
+(defnd make-tpm-result 929,38823
+(cutil::defenum tpm-nv-index-p934,38937
+(defnd make-tpm-nv-index 956,40597
+(cutil::defenum tpm-family-operation-p961,40715
+(defnd make-tpm-family-operation 970,41070
+(cutil::defenum tpm-capability-area-get-p974,41169
+(defnd make-tpm-capability-area-get 1005,45213
+(cutil::defenum tpm-cap-flag-subcaps-p1009,45312
+(defnd make-tpm-cap-flag-subcaps 1016,45646
+(cutil::defenum tpm-cap-property-subcaps-p1020,45746
+(defnd make-tpm-cap-property-subcaps 1058,50127
+(cutil::defenum tpm-da-state-p1063,50272
+(defnd make-tpm-da-state 1070,50576
+(cutil::defaggregate tpm-struct-ver1078,50808
+(cutil::defaggregate tpm-digest1093,51465
+(cutil::deflist tpm-digest-list-p 1099,51612
+(defnd make-tpm-digest-list 1105,51737
+(cutil::defaggregate tpm-nonce1109,51795
+(cutil::defaggregate tpm-key-handle-list1116,52067
+(cutil::defaggregate tpm-select-size1125,52383
+(cutil::defaggregate tpm-session-data1136,52853
+(cutil::deflist tpm-session-data-list-p 1142,52987
+(defnd make-tpm-session-data-list 1148,53124
+(cutil::defaggregate tpm-pcr-selection1152,53196
+(cutil::defaggregate tpm-rsa-key-parms1161,53526
+(cutil::defaggregate tpm-symmetric-key-parms1174,54117
+(cutil::defaggregate tpm-store-pubkey1187,54604
+(cutil::defaggregate tpm-store-privkey1196,54969
+(cutil::defaggregate tpm-family-label1205,55328
+(cutil::defaggregate tpm-delegate-label1212,55631
+(cutil::defaggregate tpm-auditdigest1225,56162
+(cutil::defaggregate tpm-chosenid-hash1235,56505
+(cutil::defaggregate tpm-composite-hash1244,56854
+(cutil::defaggregate tpm-dirvalue1253,57145
+(cutil::deflist tpm-dirvalue-list-p 1259,57294
+(defnd make-tpm-dirvalue-list 1265,57423
+(cutil::defaggregate tpm-hmac1271,57601
+(cutil::defaggregate tpm-pcrvalue1280,57868
+(cutil::deflist tpm-pcrvalue-list-p 1286,58017
+(defnd make-tpm-pcrvalue-list 1292,58146
+(defprimitive tpmx-pcrvalue-list 1296,58250
+(defthm tpmx-pcrvalue-list-true-listp-lemma1302,58464
+(defthm tpmx-pcrvalue-list-nth-lemma1307,58634
+(defthm tpmx-pcrvalue-list-update-nth-lemma1314,58878
+(defprimitive tpm-daa-context-seed 1324,59247
+(defprimitive tpm-daa-tpm-seed 1331,59527
+(defprimitive tpm-encauth 1338,59759
+(defprimitive tpm-secret 1345,59951
+(cutil::defaggregate tpm-version1355,60233
+(cutil::defaggregate tpm-counter-value1368,60899
+(cutil::deflist tpm-counter-value-list-p 1378,61247
+(defnd make-tpm-counter-value-list 1384,61386
+(cutil::defaggregate tpm-sign-info1388,61456
+(cutil::defaggregate tpm-msa-composite1403,62062
+(cutil::defaggregate tpm-cmk-auth1412,62436
+(cutil::defaggregate tpm-cmk-migauth1423,63091
+(cutil::defaggregate tpm-cmk-sigticket1434,63560
+(cutil::defaggregate tpm-cmk-ma-approval1445,64022
+(cutil::defaggregate tpm-permanent-flags1454,64430
+(cutil::defaggregate tpm-stclear-flags1501,68100
+(cutil::defaggregate tpm-stany-flags1518,69331
+(cutil::defaggregate tpm-pcr-attributes1533,70378
+(cutil::deflist tpm-pcr-attributes-list-p 1543,71003
+(defnd make-tpm-pcr-attributes-list 1549,71144
+(defprimitive tpmx-pcr-attributes-list 1553,71255
+(defthm tpmx-pcr-attributes-list-true-listp-lemma1559,71487
+(defthm tpmx-pcr-arrtibutes-list-nth-lemma1564,71675
+(defthm tpmx-pcr-attributes-list-update-nth-lemma1571,71945
+(cutil::defaggregate tpm-stored-data1580,72309
+(cutil::defaggregate tpm-stored-data121595,73006
+(cutil::defaggregate tpm-symmetric-key1612,73759
+(cutil::defaggregate tpm-bound-data1625,74347
+(cutil::defaggregate tpm-key-parms1652,75521
+(cutil::defaggregate tpm-ek-blob1667,76297
+(cutil::defaggregate tpm-transport-public1680,76777
+(cutil::defaggregate tpm-transport-log-in1693,77403
+(cutil::defaggregate tpm-transport-auth1704,77976
+(cutil::defaggregate tpm-current-ticks1713,78255
+(cutil::defaggregate tpm-context-blob1726,79036
+(cutil::defaggregate tpm-context-sensitive1751,80558
+(cutil::defaggregate tpm-nv-attributes1764,81151
+(cutil::defaggregate tpm-nv-data-public1773,81418
+(cutil::defaggregate tpm-delegations1782,81683
+(cutil::defaggregate tpm-family-table-entry1795,82122
+(cutil::defaggregate tpm-da-action-type1810,83120
+(cutil::defaggregate tpm-daa-issuer1819,83430
+(cutil::defaggregate tpm-daa-tpm1840,84797
+(cutil::defaggregate tpm-daa-joindata1857,85973
+(cutil::defaggregate tpm-daa-blob1868,86518
+(cutil::defaggregate tpm-daa-sensitive1889,87761
+(cutil::defaggregate tpm-changeauth-validate1904,88326
+(cutil::defaggregate tpm-stclear-data1913,88696
+(cutil::defaggregate tpm-pcr-composite1932,90191
+(cutil::defaggregate tpm-pcr-info1943,90774
+(cutil::defaggregate tpm-pcr-info-long1954,91432
+(cutil::defaggregate tpm-pcr-info-short1973,92741
+(cutil::defaggregate tpm-sealed-data1984,93372
+(cutil::defaggregate tpm-store-asymkey2001,94217
+(cutil::defaggregate tpm-migrate-asymkey2016,95530
+(cutil::defaggregate tpm-key2071,99008
+(cutil::deflist tpm-key-list-p 2093,100294
+(defnd make-tpm-key-list 2099,100413
+(cutil::defaggregate tpm-key122103,100469
+(cutil::defaggregate tpm-pubkey2130,101958
+(cutil::defaggregate tpm-certify-info2140,102287
+(cutil::defaggregate tpm-certify-info22165,103947
+(cutil::defaggregate tpm-quote-info2198,106189
+(cutil::defaggregate tpm-ek-blob-auth2211,106767
+(cutil::defaggregate tpm-identity-req2220,107052
+(cutil::defaggregate tpm-asym-ca-contents2237,108033
+(cutil::defaggregate tpm-sym-ca-attestation2246,108453
+(cutil::defaggregate tpm-transport-internal2257,108987
+(cutil::defaggregate tpm-transport-log-out2274,109721
+(cutil::defaggregate tpm-audit-event-in2287,110477
+(cutil::defaggregate tpm-audit-event-out2298,111069
+(cutil::defaggregate tpm-nv-data-sensitive2309,111666
+(cutil::defaggregate tpm-family-table2322,112288
+(cutil::defaggregate tpm-delegate-sensitive2329,112517
+(cutil::defaggregate tpm-cap-version-info2338,112813
+(cutil::defaggregate tpm-da-info2357,113629
+(cutil::defaggregate tpm-da-info-limited2378,114859
+(cutil::defaggregate tpm-daa-context2399,116101
+(cutil::defaggregate tpm-migrationkeyauth2420,117515
+(cutil::defaggregate tpm-quote-info22431,118028
+(cutil::defaggregate tpm-ek-blob-activate2444,118537
+(cutil::defaggregate tpm-identity-contents2457,119162
+(cutil::defaggregate tpm-identity-proof2470,119858
+(cutil::defaggregate tpm-delegate-public2499,121338
+(cutil::defaggregate tpm-stany-data2516,122532
+(cutil::defaggregate tpm-delegate-table-row2533,123357
+(cutil::defaggregate tpm-delegate-owner-blob2544,123861
+(cutil::defaggregate tpm-delegate-key-blob2563,124842
+(cutil::defaggregate tpm-delegate-table2588,126170
+(cutil::defaggregate tpm-permanent-data2599,126531
+
+tpm-structures.lisp,10674
+(defprimitive byte 13,404
+(defthm byte-is-integerp 20,524
+(defprimitive uint16 24,678
+(defthm uint16-is-integerp 31,814
+(defprimitive uint32 34,929
+(defthm uint32-is-integerp 41,1065
+(defprimitive uint64 44,1180
+(defthm uint64-is-integerp 51,1316
+(cutil::deflist byte-list-p 54,1431
+(defnd make-byte-list 60,1544
+(cutil::deflist uint32-list-p 63,1577
+(defnd make-uint32-list 69,1694
+(defprimitive 4-byte-list 72,1729
+(defprimitive 16-byte-list 78,1891
+(defprimitive 20-byte-list 84,2056
+(defprimitive 26-byte-list 90,2221
+(defprimitive 128-byte-list 96,2386
+(defprimitive 256-byte-list 102,2554
+(defprimitive tpm-actual-count 114,2933
+(defthm tpm-actual-count-is-integerp 119,3037
+(defprimitive tpm-authhandle 124,3242
+(defthm tpm-authhandle-is-integerp 129,3344
+(defprimitive tpm-capability-area 134,3547
+(defthm tpm-capability-area-is-integerp 139,3654
+(defprimitive tpm-count-id 144,3867
+(defthm tpm-count-id-is-integerp 149,3967
+(defprimitive tpm-delegate-index 154,4171
+(defthm tpm-delegate-index-is-integerp 159,4277
+(defprimitive tpm-dirindex 164,4475
+(defthm tpm-dirindex-is-integerp 169,4575
+(defprimitive tpm-family-id 174,4937
+(defthm tpm-authhandlefamily-id-is-integerp 179,5038
+(defprimitive tpm-family-verification 184,5320
+(defthm tpm-family-verification-is-integerp 189,5431
+(defprimitive tpm-modifier-indicator 194,5652
+(defthm tpm-modifier-indicator-is-integerp 199,5762
+(defprimitive tpm-pcrindex 204,5972
+(defthm tpm-pcrindex-is-integerp 209,6072
+(defprimitive tpm-redit-command 214,6254
+(defthm tpm-redit-command-is-integerp 219,6359
+(cutil::defenum tpm-structure-tag-p224,6561
+(defnd make-tpm-strcuture-tag 287,8241
+(defprimitive tpm-sym-mode 292,8361
+(defthm tpm-sym-mode-is-integerp 297,8461
+(defprimitive tpm-transhandle 302,8647
+(defthm tpm-transhandle-is-integerp 307,8750
+(defprimitive tpm-transport-attributes 312,8998
+(defthm tpm-transport-attributes-is-integerp 317,9110
+(defprimitive tpm-entity-type 322,9366
+(defthm tpm-entity-type-is-integerp 327,9469
+(defprimitive tpm-handle 332,9678
+(defthm tpm-handle-is-integerp 337,9776
+(defprimitive tpm-version-byte 342,9957
+(defthm tpm-version-byte-is-integerp 347,10057
+(defprimitive tpm-authdata 351,10224
+(cutil::defenum tpm-command-code-p358,10385
+(defnd make-tpm-command-code 486,13957
+(defprimitive tpm-capability-area-set 490,14052
+(defthm tpm-capability-area-set-is-integerp 495,14163
+(defprimitive tpm-redir-command 500,14375
+(defthm tpm-redir-command-is-integerp 505,14480
+(cutil::defaggregate tpm-startup-effects514,14831
+(cutil::defaggregate tpm-key-flags529,15940
+(cutil::defaggregate tpm-cmk-delegate540,17012
+(cutil::defaggregate tpm-locality-selection550,17991
+(cutil::defaggregate tpm-key-control561,18496
+(cutil::defaggregate tpm-family-flags568,18798
+(cutil::defenum tpm-resource-type-p580,19432
+(defnd make-tpm-resource-type 595,20333
+(cutil::defenum tpm-payload-type-p600,20490
+(defnd make-tpm-payload-type 613,21125
+(cutil::defenum tpm-key-handle-p618,21261
+(defnd make-tpm-key-handle 630,21868
+(cutil::defenum tpm-startup-type-p635,21981
+(defnd make-tpm-startup-type 643,22298
+(cutil::defenum tpm-protocol-id-p648,22406
+(defnd make-tpm-protocol-id 660,22837
+(cutil::defenum tpm-algorithm-id-p665,22957
+(defnd make-tpm-algorithm-id 680,23577
+(cutil::defenum tpm-physical-presence-p685,23721
+(defnd make-tpm-physical-presence 698,24476
+(cutil::defenum tpm-migrate-scheme-p703,24611
+(defnd make-tpm-migrate-scheme 713,25236
+(cutil::defenum tpm-ek-type-p718,25395
+(defnd make-tpm-ek-type 725,25614
+(cutil::defenum tpm-platform-specific-p730,25766
+(defnd make-tpm-platform-specific 740,26115
+(cutil::defenum tpm-enc-scheme-p745,26247
+(defnd make-tpm-enc-scheme 755,26591
+(cutil::defenum tpm-key-usage-p760,26716
+(defnd make-tpm-key-usage 772,27835
+(cutil::defenum tpm-sig-scheme-p777,27958
+(defnd make-tpm-sig-scheme 786,28252
+(cutil::defenum tpm-auth-data-usage-p791,28420
+(defnd make-tpm-auth-data-usage 799,28982
+(cutil::defenum tpm-tag-p804,29108
+(defnd make-tpm-tag 815,29704
+(cutil::defenum tpm-result-p820,29810
+(defnd make-tpm-result 929,38819
+(cutil::defenum tpm-nv-index-p934,38933
+(defnd make-tpm-nv-index 956,40593
+(cutil::defenum tpm-family-operation-p961,40711
+(defnd make-tpm-family-operation 970,41066
+(cutil::defenum tpm-capability-area-get-p974,41165
+(defnd make-tpm-capability-area-get 1005,45209
+(cutil::defenum tpm-cap-flag-subcaps-p1009,45308
+(defnd make-tpm-cap-flag-subcaps 1016,45642
+(cutil::defenum tpm-cap-property-subcaps-p1020,45742
+(defnd make-tpm-cap-property-subcaps 1058,50123
+(cutil::defenum tpm-da-state-p1063,50268
+(defnd make-tpm-da-state 1070,50572
+(cutil::defaggregate tpm-struct-ver1078,50804
+(cutil::defaggregate tpm-digest1093,51461
+(cutil::deflist tpm-digest-list-p 1099,51608
+(defnd make-tpm-digest-list 1105,51733
+(cutil::defaggregate tpm-nonce1109,51791
+(cutil::defaggregate tpm-key-handle-list1116,52063
+(cutil::defaggregate tpm-select-size1125,52379
+(cutil::defaggregate tpm-session-data1136,52849
+(cutil::deflist tpm-session-data-list-p 1142,52983
+(defnd make-tpm-session-data-list 1148,53120
+(cutil::defaggregate tpm-pcr-selection1152,53192
+(cutil::defaggregate tpm-rsa-key-parms1161,53522
+(cutil::defaggregate tpm-symmetric-key-parms1174,54113
+(cutil::defaggregate tpm-store-pubkey1187,54600
+(cutil::defaggregate tpm-store-privkey1196,54965
+(cutil::defaggregate tpm-family-label1205,55324
+(cutil::defaggregate tpm-delegate-label1212,55627
+(cutil::defaggregate tpm-auditdigest1225,56158
+(cutil::defaggregate tpm-chosenid-hash1235,56501
+(cutil::defaggregate tpm-composite-hash1244,56850
+(cutil::defaggregate tpm-dirvalue1253,57141
+(cutil::deflist tpm-dirvalue-list-p 1259,57290
+(defnd make-tpm-dirvalue-list 1265,57419
+(cutil::defaggregate tpm-hmac1271,57597
+(cutil::defaggregate tpm-pcrvalue1280,57864
+(cutil::deflist tpm-pcrvalue-list-p 1286,58013
+(defnd make-tpm-pcrvalue-list 1292,58142
+(defprimitive tpmx-pcrvalue-list 1296,58246
+(defthm tpmx-pcrvalue-list-true-listp-lemma1302,58460
+(defthm tpmx-pcrvalue-list-nth-lemma1307,58630
+(defthm tpmx-pcrvalue-list-update-nth-lemma1314,58874
+(defprimitive tpm-daa-context-seed 1324,59243
+(defprimitive tpm-daa-tpm-seed 1331,59523
+(defprimitive tpm-encauth 1338,59755
+(defprimitive tpm-secret 1345,59947
+(cutil::defaggregate tpm-version1355,60229
+(cutil::defaggregate tpm-counter-value1368,60895
+(cutil::deflist tpm-counter-value-list-p 1378,61243
+(defnd make-tpm-counter-value-list 1384,61382
+(cutil::defaggregate tpm-sign-info1388,61452
+(cutil::defaggregate tpm-msa-composite1403,62058
+(cutil::defaggregate tpm-cmk-auth1412,62432
+(cutil::defaggregate tpm-cmk-migauth1423,63087
+(cutil::defaggregate tpm-cmk-sigticket1434,63556
+(cutil::defaggregate tpm-cmk-ma-approval1445,64018
+(cutil::defaggregate tpm-permanent-flags1454,64426
+(cutil::defaggregate tpm-stclear-flags1501,68096
+(cutil::defaggregate tpm-stany-flags1518,69327
+(cutil::defaggregate tpm-pcr-attributes1533,70374
+(cutil::deflist tpm-pcr-attributes-list-p 1543,70999
+(defnd make-tpm-pcr-attributes-list 1549,71140
+(defprimitive tpmx-pcr-attributes-list 1553,71251
+(defthm tpmx-pcr-attributes-list-true-listp-lemma1559,71483
+(defthm tpmx-pcr-arrtibutes-list-nth-lemma1564,71671
+(defthm tpmx-pcr-attributes-list-update-nth-lemma1571,71941
+(cutil::defaggregate tpm-stored-data1580,72305
+(cutil::defaggregate tpm-stored-data121595,73002
+(cutil::defaggregate tpm-symmetric-key1612,73755
+(cutil::defaggregate tpm-bound-data1625,74343
+(cutil::defaggregate tpm-key-parms1652,75517
+(cutil::defaggregate tpm-ek-blob1667,76293
+(cutil::defaggregate tpm-transport-public1680,76773
+(cutil::defaggregate tpm-transport-log-in1693,77399
+(cutil::defaggregate tpm-transport-auth1704,77972
+(cutil::defaggregate tpm-current-ticks1713,78251
+(cutil::defaggregate tpm-context-blob1726,79032
+(cutil::defaggregate tpm-context-sensitive1751,80554
+(cutil::defaggregate tpm-nv-attributes1764,81147
+(cutil::defaggregate tpm-nv-data-public1773,81414
+(cutil::defaggregate tpm-delegations1782,81679
+(cutil::defaggregate tpm-family-table-entry1795,82118
+(cutil::defaggregate tpm-da-action-type1810,83116
+(cutil::defaggregate tpm-daa-issuer1819,83426
+(cutil::defaggregate tpm-daa-tpm1840,84793
+(cutil::defaggregate tpm-daa-joindata1857,85969
+(cutil::defaggregate tpm-daa-blob1868,86514
+(cutil::defaggregate tpm-daa-sensitive1889,87757
+(cutil::defaggregate tpm-changeauth-validate1904,88322
+(cutil::defaggregate tpm-stclear-data1913,88692
+(cutil::defaggregate tpm-pcr-composite1932,90187
+(cutil::defaggregate tpm-pcr-info1943,90770
+(cutil::defaggregate tpm-pcr-info-long1954,91428
+(cutil::defaggregate tpm-pcr-info-short1973,92737
+(cutil::defaggregate tpm-sealed-data1984,93368
+(cutil::defaggregate tpm-store-asymkey2001,94213
+(cutil::defaggregate tpm-migrate-asymkey2016,95526
+(cutil::defaggregate tpm-key2071,99004
+(cutil::deflist tpm-key-list-p 2093,100290
+(defnd make-tpm-key-list 2099,100409
+(cutil::defaggregate tpm-key122103,100465
+(cutil::defaggregate tpm-pubkey2130,101954
+(cutil::defaggregate tpm-certify-info2140,102283
+(cutil::defaggregate tpm-certify-info22165,103943
+(cutil::defaggregate tpm-quote-info2198,106185
+(cutil::defaggregate tpm-ek-blob-auth2211,106763
+(cutil::defaggregate tpm-identity-req2220,107048
+(cutil::defaggregate tpm-asym-ca-contents2237,108029
+(cutil::defaggregate tpm-sym-ca-attestation2246,108449
+(cutil::defaggregate tpm-transport-internal2257,108983
+(cutil::defaggregate tpm-transport-log-out2274,109717
+(cutil::defaggregate tpm-audit-event-in2287,110473
+(cutil::defaggregate tpm-audit-event-out2298,111065
+(cutil::defaggregate tpm-nv-data-sensitive2309,111662
+(cutil::defaggregate tpm-family-table2322,112284
+(cutil::defaggregate tpm-delegate-sensitive2329,112513
+(cutil::defaggregate tpm-cap-version-info2338,112809
+(cutil::defaggregate tpm-da-info2357,113625
+(cutil::defaggregate tpm-da-info-limited2378,114855
+(cutil::defaggregate tpm-daa-context2399,116097
+(cutil::defaggregate tpm-migrationkeyauth2420,117511
+(cutil::defaggregate tpm-quote-info22431,118024
+(cutil::defaggregate tpm-ek-blob-activate2444,118533
+(cutil::defaggregate tpm-identity-contents2457,119158
+(cutil::defaggregate tpm-identity-proof2470,119854
+(cutil::defaggregate tpm-delegate-public2499,121334
+(cutil::defaggregate tpm-stany-data2516,122528
+(cutil::defaggregate tpm-delegate-table-row2533,123353
+(cutil::defaggregate tpm-delegate-owner-blob2544,123857
+(cutil::defaggregate tpm-delegate-key-blob2563,124838
+(cutil::defaggregate tpm-delegate-table2588,126166
+(cutil::defaggregate tpm-permanent-data2599,126527
+
+tpm-structures-resources.lisp,9165
+(defprimitive byte 12,372
+(defprimitive uint16 19,492
+(defprimitive uint32 26,628
+(defprimitive uint64 33,764
+(cutil::deflist byte-list-p 40,900
+(defnd make-byte-list 46,1013
+(cutil::deflist uint32-list-p 49,1046
+(defnd make-uint32-list 55,1163
+(defprimitive 4-byte-list 58,1198
+(defprimitive 16-byte-list 64,1360
+(defprimitive 20-byte-list 70,1525
+(defprimitive 26-byte-list 76,1690
+(defprimitive 128-byte-list 82,1855
+(defprimitive 256-byte-list 88,2023
+(defprimitive tpm-actual-count 100,2402
+(defprimitive tpm-authhandle 107,2566
+(defprimitive tpm-capability-area 114,2732
+(defprimitive tpm-count-id 121,2898
+(defprimitive tpm-delegate-index 128,3069
+(defprimitive tpm-dirindex 135,3222
+(defprimitive tpm-family-id 142,3551
+(defprimitive tpm-family-verification 149,3788
+(defprimitive tpm-modifier-indicator 156,3954
+(defprimitive tpm-pcrindex 163,4111
+(defprimitive tpm-redit-command 170,4260
+(defprimitive tpm-structure-tag 177,4419
+(defprimitive tpm-sym-mode 184,4582
+(defprimitive tpm-transhandle 191,4735
+(defprimitive tpm-transport-attributes 198,4944
+(defprimitive tpm-entity-type 205,5143
+(defprimitive tpm-handle 212,5313
+(defprimitive tpm-version-byte 219,5465
+(defprimitive tpm-authdata 225,5587
+(defprimitive tpm-command-code 232,5748
+(defprimitive tpm-capability-area-set 238,5886
+(defprimitive tpm-redir-command 245,6043
+(cutil::defaggregate tpm-startup-effects256,6351
+(cutil::defaggregate tpm-key-flags271,7460
+(cutil::defaggregate tpm-cmk-delegate282,8532
+(cutil::defaggregate tpm-locality-selection292,9511
+(cutil::defaggregate tpm-key-control303,10016
+(cutil::defaggregate tpm-family-flags310,10318
+(cutil::defenum tpm-resource-type-p322,10952
+(defnd make-tpm-resource-type 337,11853
+(cutil::defenum tpm-payload-type-p342,12010
+(defnd make-tpm-payload-type 355,12645
+(cutil::defenum tpm-key-handle-p360,12781
+(defnd make-tpm-key-handle 372,13388
+(cutil::defenum tpm-startup-type-p377,13501
+(defnd make-tpm-startup-type 385,13818
+(cutil::defenum tpm-protocol-id-p390,13926
+(defnd make-tpm-protocol-id 402,14357
+(cutil::defenum tpm-algorithm-id-p407,14477
+(defnd make-tpm-algorithm-id 422,15097
+(cutil::defenum tpm-physical-presence-p427,15241
+(defnd make-tpm-physical-presence 440,15996
+(cutil::defenum tpm-migrate-scheme-p445,16131
+(defnd make-tpm-migrate-scheme 455,16756
+(cutil::defenum tpm-ek-type-p460,16915
+(defnd make-tpm-ek-type 467,17134
+(cutil::defenum tpm-platform-specific-p472,17286
+(defnd make-tpm-platform-specific 482,17635
+(cutil::defenum tpm-enc-scheme-p487,17767
+(defnd make-tpm-enc-scheme 497,18111
+(cutil::defenum tpm-key-usage-p502,18236
+(defnd make-tpm-key-usage 514,19355
+(cutil::defenum tpm-sig-scheme-p519,19478
+(defnd make-tpm-sig-scheme 528,19772
+(cutil::defenum tpm-auth-data-usage-p533,19940
+(defnd make-tpm-auth-data-usage 541,20502
+(cutil::defenum tpm-tag-p546,20628
+(defnd make-tpm-tag 557,21224
+(cutil::defenum tpm-result-p562,21330
+(defnd make-tpm-result 670,30263
+(cutil::defenum tpm-nv-index-p675,30377
+(defnd make-tpm-nv-index 697,32037
+(cutil::defenum tpm-family-operation-p702,32155
+(defnd make-tpm-family-operation 711,32510
+(cutil::defenum tpm-capability-area-get-p715,32609
+(defnd make-tpm-capability-area-get 746,36653
+(cutil::defenum tpm-cap-flag-subcaps-p750,36752
+(defnd make-tpm-cap-flag-subcaps 757,37086
+(cutil::defenum tpm-cap-property-subcaps-p761,37186
+(defnd make-tpm-cap-property-subcaps 799,41567
+(cutil::defenum tpm-da-state-p804,41712
+(defnd make-tpm-da-state 811,42016
+(cutil::defaggregate tpm-struct-ver819,42248
+(cutil::defaggregate tpm-digest832,42759
+(cutil::deflist tpm-digest-list-p 838,42925
+(defnd make-tpm-digest-list 844,43050
+(cutil::defaggregate tpm-nonce848,43108
+(cutil::defaggregate tpm-key-handle-list855,43380
+(cutil::defaggregate tpm-select-size864,43696
+(cutil::defaggregate tpm-session-data875,44166
+(cutil::deflist tpm-session-data-list-p 881,44300
+(defnd make-tpm-session-data-list 887,44437
+(cutil::defaggregate tpm-pcr-selection891,44509
+(cutil::defaggregate tpm-rsa-key-parms900,44839
+(cutil::defaggregate tpm-symmetric-key-parms913,45430
+(cutil::defaggregate tpm-store-pubkey926,45917
+(cutil::defaggregate tpm-store-privkey935,46282
+(cutil::defaggregate tpm-family-label944,46641
+(cutil::defaggregate tpm-delegate-label951,46944
+(defprimitive tpm-auditdigest 963,47404
+(defprimitive tpm-chosenid-hash 970,47634
+(defprimitive tpm-composite-hash 977,47871
+(defprimitive tpm-dirvalue 984,48050
+(cutil::deflist tpm-dirvalue-list-p 989,48158
+(defnd make-tpm-dirvalue-list 995,48287
+(defprimitive tpm-hmac 1000,48394
+(defprimitive tpm-pcrvalue 1007,48549
+(cutil::deflist tpm-pcrvalue-list-p 1012,48657
+(defnd make-tpm-pcrvalue-list 1018,48786
+(defprimitive tpm-daa-context-seed 1023,48887
+(defprimitive tpm-daa-tpm-seed 1030,49167
+(defprimitive tpm-encauth 1037,49399
+(defprimitive tpm-secret 1044,49591
+(cutil::defaggregate tpmx-auth-info1054,49873
+(cutil::defaggregate tpm-version1069,50283
+(cutil::defaggregate tpm-counter-value1082,50949
+(cutil::deflist tpm-counter-value-list-p 1092,51297
+(defnd make-tpm-counter-value-list 1098,51436
+(cutil::defaggregate tpm-sign-info1102,51506
+(cutil::defaggregate tpm-msa-composite1117,52112
+(cutil::defaggregate tpm-cmk-auth1126,52486
+(cutil::defaggregate tpm-cmk-migauth1137,53141
+(cutil::defaggregate tpm-cmk-sigticket1148,53610
+(cutil::defaggregate tpm-cmk-ma-approval1159,54072
+(cutil::defaggregate tpm-permanent-flags1168,54480
+(cutil::defaggregate tpm-stclear-flags1215,58150
+(cutil::defaggregate tpm-stany-flags1232,59381
+(cutil::defaggregate tpm-pcr-attributes1247,60428
+(cutil::deflist tpm-pcr-attributes-list-p 1257,61053
+(defnd make-tpm-pcr-attributes-list 1263,61194
+(cutil::defaggregate tpm-stored-data1267,61266
+(cutil::defaggregate tpm-stored-data121282,61963
+(cutil::defaggregate tpm-symmetric-key1299,62716
+(cutil::defaggregate tpm-bound-data1312,63304
+(cutil::defaggregate tpm-key-parms1323,63668
+(cutil::defaggregate tpm-ek-blob1338,64411
+(cutil::defaggregate tpm-transport-public1351,64891
+(cutil::defaggregate tpm-transport-log-in1364,65517
+(cutil::defaggregate tpm-transport-auth1375,66090
+(cutil::defaggregate tpm-current-ticks1384,66369
+(cutil::defaggregate tpm-context-blob1397,67150
+(cutil::defaggregate tpm-context-sensitive1422,68672
+(cutil::defaggregate tpm-nv-attributes1435,69265
+(cutil::defaggregate tpm-nv-data-public1444,69532
+(cutil::defaggregate tpm-delegations1453,69797
+(cutil::defaggregate tpm-family-table-entry1466,70236
+(cutil::defaggregate tpm-da-action-type1481,71234
+(cutil::defaggregate tpm-daa-issuer1490,71544
+(cutil::defaggregate tpm-daa-tpm1511,72911
+(cutil::defaggregate tpm-daa-joindata1528,74087
+(cutil::defaggregate tpm-daa-blob1539,74632
+(cutil::defaggregate tpm-daa-sensitive1560,75875
+(cutil::defaggregate tpm-changeauth-validate1575,76440
+(cutil::defaggregate tpm-stclear-data1584,76810
+(cutil::defaggregate tpm-pcr-composite1603,78270
+(cutil::defaggregate tpm-pcr-info1614,78853
+(cutil::defaggregate tpm-pcr-info-long1625,79511
+(cutil::defaggregate tpm-pcr-info-short1644,80820
+(cutil::defaggregate tpm-sealed-data1655,81451
+(cutil::defaggregate tpm-key1672,82286
+(cutil::deflist tpm-key-list-p 1696,83726
+(defnd make-tpm-key-list 1702,83845
+(cutil::defaggregate tpm-key121706,83901
+(cutil::defaggregate tpm-pubkey1733,85390
+(cutil::defaggregate tpm-store-asymkey1742,85719
+(cutil::defaggregate tpm-migrate-asymkey1757,87032
+(cutil::defaggregate tpm-certify-info1772,87874
+(cutil::defaggregate tpm-certify-info21797,89534
+(cutil::defaggregate tpm-quote-info1830,91776
+(cutil::defaggregate tpm-ek-blob-auth1843,92354
+(cutil::defaggregate tpm-identity-req1852,92639
+(cutil::defaggregate tpm-asym-ca-contents1869,93620
+(cutil::defaggregate tpm-sym-ca-attestation1878,94040
+(cutil::defaggregate tpm-transport-internal1889,94574
+(cutil::defaggregate tpm-transport-log-out1906,95308
+(cutil::defaggregate tpm-audit-event-in1919,96064
+(cutil::defaggregate tpm-audit-event-out1930,96656
+(cutil::defaggregate tpm-nv-data-sensitive1941,97253
+(cutil::defaggregate tpm-family-table1954,97875
+(cutil::defaggregate tpm-delegate-sensitive1961,98104
+(cutil::defaggregate tpm-cap-version-info1970,98400
+(cutil::defaggregate tpm-da-info1989,99216
+(cutil::defaggregate tpm-da-info-limited2010,100446
+(cutil::defaggregate tpm-daa-context2031,101688
+(cutil::defaggregate tpmx-internal-save-data2052,103101
+(cutil::defaggregate tpm-migrationkeyauth2071,104129
+(cutil::defaggregate tpm-quote-info22082,104642
+(cutil::defaggregate tpm-ek-blob-activate2095,105151
+(cutil::defaggregate tpm-identity-contents2108,105776
+(cutil::defaggregate tpm-identity-proof2121,106472
+(cutil::defaggregate tpm-delegate-public2150,107952
+(cutil::defaggregate tpm-stany-data2167,109146
+(cutil::defaggregate tpm-delegate-table-row2184,109971
+(cutil::defaggregate tpm-delegate-owner-blob2195,110475
+(cutil::defaggregate tpm-delegate-key-blob2214,111456
+(cutil::defaggregate tpm-delegate-table2239,112784
+(cutil::defaggregate tpm-permanent-data2250,113145
+(cutil::defaggregate tpmx-internal-data2311,117103
+
+tpmx-constants-gwk.lisp,73
+(defconst *tpmx-sha1-max-bytes* 9,255
+(defconst *tpmx-num-pcrs* 13,390
+
+tpmx-constants.lisp,73
+(defconst *tpmx-sha1-max-bytes* 9,255
+(defconst *tpmx-num-pcrs* 13,390
+
+tpmx-objects-gwk.lisp,561
+(cutil::defaggregate tpmx-auth-info13,364
+(cutil::defaggregate tpmx-sha1-thread28,773
+(cutil::define tpmx-sha1-thread->start39,1242
+(cutil::define tpmx-sha1-thread->stop94,3526
+(cutil::define tpmx-sha1-thread->integer-update111,4185
+(cutil::define tpmx-sha1-thread->hash-list141,5436
+(cutil::define tpmx-sha1-thread->update157,5993
+(cutil::define tpmx-sha1-thread->start-stop182,7090
+(cutil::define tpmx-sha1-thread->start-update-stop206,8043
+(cutil::define tpmx-sha1-thread->start-extend-stop228,8845
+(cutil::defaggregate tpmx-internal-data250,9740
+
+tpm-gwk.lisp,0
+
+doc.lisp,0
